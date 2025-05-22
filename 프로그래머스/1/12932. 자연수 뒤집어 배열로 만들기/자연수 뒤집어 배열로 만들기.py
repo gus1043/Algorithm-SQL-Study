@@ -1,7 +1,7 @@
 def solution(n):
     answer = []
-    n=reversed(str(n))
-    for i in n:
-        answer.append(int(i))
-    print(answer)
+    length = len(str(n))-1
+    for i in range(length, -1, -1):
+        answer.append(int(str(n)[i]))
+                      
     return answer
