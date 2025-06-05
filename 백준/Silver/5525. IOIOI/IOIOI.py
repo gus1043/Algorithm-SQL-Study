@@ -8,24 +8,21 @@ import sys
 N=int(sys.stdin.readline())
 M=int(sys.stdin.readline())
 S=sys.stdin.readline()
+
+i=0
+cnt=0
 answer =0 
 
-#pn 만들기
-Pn=""
-I=N+1
-O=N
-for i in range( 2*N+1):
-    if i%2==0:
-        Pn+="I"
-        I-=1
-    else : 
-        Pn+="O"
-        O-=1
-
-for i in range(M-1):
-    if S[i:2*N+1+i]==Pn:
-        
-        answer += 1
+while i<M-1:
+    if S[i]=="I" and S[i+1]=="O" and S[i+2]=="I":
+        cnt+=1
+        i+=2
+        if cnt==N:
+            answer+=1
+            cnt-=1 #다음 IOI의 시작점일 수 있으니
+    else:
+        i+=1
+        cnt=0
 
 print (answer)
 
