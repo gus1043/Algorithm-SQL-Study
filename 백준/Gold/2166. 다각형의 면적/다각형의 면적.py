@@ -2,15 +2,13 @@ import sys
 
 N = int(sys.stdin.readline())
 point = []
+answer = 0 
 
 for i in range(N):
     point.append(list(map(int, sys.stdin.readline().split()))) 
 point.append(point[0])
 
-temp1=0
-temp2=0
 for i in range(N):
-    temp1 += point[i][0]*point[i+1][1]
-    temp2 += point[i][1]*point[i+1][0]
+    answer += point[i][1]*point[i+1][0] - point[i][0]*point[i+1][1]
 
-print(abs((temp2-temp1)/2))
+print(abs(answer)/2)
