@@ -1,13 +1,9 @@
 def solution(numbers):
     answer = []
-    revers_list = list(reversed(numbers))
-    # print(numbers)
-    # print(revers_list)
-    for i in range(len(numbers)):
-        for j in range(len(numbers)-i-1):
-            answer.append(numbers[i]+revers_list[j])
+    for i in range(len(numbers)-1): 
+        for j in range(i+1, len(numbers)):
+            answer.append(numbers[i]+numbers[j])
+            answer=list(set(answer))
             
-    answer=list(set(answer))
     answer.sort()
-            
     return answer
