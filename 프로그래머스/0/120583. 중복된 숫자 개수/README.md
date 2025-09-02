@@ -1,10 +1,10 @@
 # [level 0] 중복된 숫자 개수 - 120583 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120583?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120583?language=c) 
 
 ### 성능 요약
 
-메모리: 9.19 MB, 시간: 0.00 ms
+메모리: 4.2 MB, 시간: 0.01 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 09월 02일 14:18:41
+2025년 09월 02일 14:19:53
 
 ### 문제 설명
 
