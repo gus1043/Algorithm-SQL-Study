@@ -1,7 +1,9 @@
 def solution(arr):
-    if (len(arr)==1):
-        return [-1]
+    answer = []
+    
+    if len(arr)==1: 
+        answer.append(-1)
     else:
-        idx=arr.index(min(arr))
-        arr.pop(idx)
-        return arr
+        arr.remove(min(arr))
+        answer = arr
+    return answer
