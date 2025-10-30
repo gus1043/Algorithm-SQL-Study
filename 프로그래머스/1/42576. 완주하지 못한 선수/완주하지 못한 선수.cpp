@@ -1,18 +1,23 @@
 #include <string>
 #include <vector>
-#include <algorithm>
+#include <unordered_map>
 
 using namespace std;
 
 string solution(vector<string> participant, vector<string> completion) {
-
-    sort( participant.begin(),  participant.end());
-    sort( completion.begin(),  completion.end());
+    unordered_map <string, int> hash_set;
     
-    for (int i=0;i<completion.size();i++){
-        if (completion[i]!=participant[i]){
-            return participant[i];
+    for(int i=0;i<participant.size();i++){
+        hash_set[participant[i]]++;
+        
+    }
+    
+    for(int i=0;i<completion.size();i++){
+        hash_set[completion[i]]--;
+        if(hash_set[completion[i]]==0){
+            hash_set.erase(hash_set.find(completion[i]));
         }
     }
-    return  participant.back();
+    
+    return hash_set.begin()->first;
 }
