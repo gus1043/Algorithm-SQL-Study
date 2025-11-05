@@ -1,0 +1,7 @@
+/* Write your PL/SQL query statement below */
+SELECT CUSTOMER_NUMBER
+FROM (SELECT customer_number, COUNT(*) AS COUNT
+    FROM ORDERS 
+    GROUP BY CUSTOMER_NUMBER
+    ORDER BY COUNT DESC)
+WHERE ROWNUM=1;
