@@ -1,0 +1,3 @@
+SELECT project_id, ROUND(AVG(experience_years), 2) AS  average_years 
+FROM PROJECT NATURAL JOIN EMPLOYEE
+GROUP BY PROJECT_ID
