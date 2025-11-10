@@ -16,6 +16,7 @@
 | [0596-classes-with-at-least-5-students](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/0596-classes-with-at-least-5-students) |
 | [0607-sales-person](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/0607-sales-person) |
 | [0619-biggest-single-number](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/0619-biggest-single-number) |
+| [0627-swap-salary](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/0627-swap-salary) |
 | [1179-game-play-analysis-i](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/1179-game-play-analysis-i) |
 | [1390-average-selling-price](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/1390-average-selling-price) |
 ## Array
