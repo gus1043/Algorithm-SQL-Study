@@ -17,6 +17,7 @@
 | [0607-sales-person](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/0607-sales-person) |
 | [0619-biggest-single-number](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/0619-biggest-single-number) |
 | [1179-game-play-analysis-i](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/1179-game-play-analysis-i) |
+| [1390-average-selling-price](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/1390-average-selling-price) |
 ## Array
 |  |
 | ------- |
