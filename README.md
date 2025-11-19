@@ -23,6 +23,7 @@
 | [1174-sales-analysis-iii](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/1174-sales-analysis-iii) |
 | [1179-game-play-analysis-i](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/1179-game-play-analysis-i) |
 | [1245-user-activity-for-the-past-30-days-i](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/1245-user-activity-for-the-past-30-days-i) |
+| [1258-article-views-i](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/1258-article-views-i) |
 | [1390-average-selling-price](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/1390-average-selling-price) |
 ## Array
 |  |
