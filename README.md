@@ -25,6 +25,7 @@
 | [1245-user-activity-for-the-past-30-days-i](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/1245-user-activity-for-the-past-30-days-i) |
 | [1258-article-views-i](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/1258-article-views-i) |
 | [1390-average-selling-price](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/1390-average-selling-price) |
+| [1509-replace-employee-id-with-the-unique-identifier](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/1509-replace-employee-id-with-the-unique-identifier) |
 | [1837-daily-leads-and-partners](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/1837-daily-leads-and-partners) |
 | [1908-recyclable-and-low-fat-products](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/1908-recyclable-and-low-fat-products) |
 | [2495-number-of-unique-subjects-taught-by-each-teacher](https://github.com/gus1043/Algorithm-SQL-Study/tree/master/2495-number-of-unique-subjects-taught-by-each-teacher) |
