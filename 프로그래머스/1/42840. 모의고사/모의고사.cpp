@@ -1,50 +1,37 @@
 #include <string>
 #include <vector>
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 
 using namespace std;
 
 vector<int> solution(vector<int> answers) {
     vector<int> answer;
-    vector<int> scores={0,0,0,0};
+    vector<int> first = {1, 2, 3, 4, 5};
+    vector<int> second = {2, 1, 2, 3, 2, 4, 2, 5};
+    vector<int> third = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
     
-    //1번 12345
-    vector<int> first = {1,2,3,4,5}; 
-    int first_score = 0;
+    vector<int> score(3);
     
-    //2번 21232425
-    vector<int> second = {2,1,2,3,2,4,2,5}; 
-    int second_score = 0;
-    
-    //3번 3311224455
-    vector<int> third = {3,3,1,1,2,2,4,4,5,5};
-    int third_score = 0;
-    
-    for(int i=0;i<answers.size();i++){
+    for(int i=0;i<answers.size();++i){
         if(answers[i]==first[i%first.size()]){
-            scores[1]++;
+            score[0]++;
         }
         if(answers[i]==second[i%second.size()]){
-            scores[2]++;
+            score[1]++;
         }
         if(answers[i]==third[i%third.size()]){
-            scores[3]++;
+            score[2]++;
         }
     }
     
-    int T= max_element(scores.begin(), scores.end())-scores.begin();
-    //가장 큰 값은 일단 scores[T]
-    for (int i=0;i<scores.size();i++){
-        if(scores[i] == scores[T]){
-            answer.push_back(i);
+    int max_score = *max_element(score.begin(), score.end());
+    
+    for(int i=0; i<3;i++){
+        if(score[i]==max_score){
+            answer.push_back(i+1);
         }
     }
-    
-    
-        
-    
-    
     
     return answer;
 }
