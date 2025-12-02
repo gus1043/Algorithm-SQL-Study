@@ -5,16 +5,18 @@
 using namespace std;
 
 vector<int> solution(vector<int> emergency) {
-    vector<int> answer;
-    vector<int> v(emergency);
+    vector<int> answer(emergency.size());
     
-    sort(v.begin(), v.end(), greater<>());
+    //큰 수 부터 정렬
+    vector<int> sorted_emergency(emergency.begin(), emergency.end());
+    sort(sorted_emergency.begin(), sorted_emergency.end(), greater<int>());
     
-    for(int i=0; i<emergency.size(); i++){
-        for(int j=0; j<v.size(); j++){
-            if(v[j]==emergency[i]) answer.push_back(j+1);
+    for(int i=0;i<emergency.size();i++){
+        for(int j=0;j<emergency.size();j++){
+            if(emergency[j]<=sorted_emergency[i]){
+                answer[j]++;
+            }
         }
     }
-    
     return answer;
 }
